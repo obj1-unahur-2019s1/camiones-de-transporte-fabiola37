@@ -1,0 +1,15 @@
+import camion.*
+import cosas.*
+
+test "testCamion" {
+	camion.cargar(knightRider)
+	camion.cargar(bumblebee)
+	assert.equals(2300,camion.pesoTotal())
+	assert.equals(false,camion.excedidoDePeso())
+	assert.equals([bumblebee],camion.objetosPeligrosos(11))
+}
+test "paqueteDeLadrillos" {
+	 camion.cargar(paqueteDeLadrillos)
+	 assert.equals([paqueteDeLadrillos],camion.objetosPeligrosos(1))
+	 assert.equals([],camion.objetosPeligrosos(4))
+}
