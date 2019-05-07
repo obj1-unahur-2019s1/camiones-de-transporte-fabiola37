@@ -13,3 +13,5 @@ test "paqueteDeLadrillos" {
 	 assert.equals([paqueteDeLadrillos],camion.objetosPeligrosos(1))
 	 assert.equals([],camion.objetosPeligrosos(4))
 }
+
+

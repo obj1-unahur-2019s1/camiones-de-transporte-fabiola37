@@ -1,0 +1,14 @@
+import camion.*
+import cosas.*
+
+test "test de clase camion" {
+
+	var camionBlanco = new Camion()
+	camionBlanco.cargar(bumblebee)
+	camionBlanco.cargar(knightRider)
+	assert.equals(2300,camionBlanco.pesoTotal())
+	var camionVerde = new Camion()
+
+	
+
+}

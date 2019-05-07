@@ -11,18 +11,15 @@ object bumblebee {
 	method transformar() { transformadoEnAuto = not transformadoEnAuto }
 }
 object paqueteDeLadrillos {
-	var cantidadDeLadrillos
+	var property cantidadDeLadrillos = 0
+	const precioUnitario = 2
 	
-	method peso() { return 2}
+	method peso() { return cantidadDeLadrillos * precioUnitario }
 	method nivelPeligrosidad(){ return 2 }
-	method nuevaCantidadDeLadrillos(nuevos) { cantidadDeLadrillos = nuevos}
-	method cantidadDeLadrillos() { return cantidadDeLadrillos}
+	
 }
 object arenaAGranel {
-	var peso
-	
-	method peso(){return peso}
-	method nuevoPeso(kilos){ peso = kilos }
+	var property peso = 0 
 	method nievelPeligrosidad(){return 1}
 }
 object bateriaAntiaerea {
